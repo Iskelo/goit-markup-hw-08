@@ -1,0 +1,42 @@
+/* 
+	|=============================
+	| FEATURES
+	|=============================
+*/
+
+.features {
+	padding-top: 94px;
+	padding-bottom: 94px;
+}
+
+.features__list--icons{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 270px;
+	height: 120px;
+	background-color: var(--background-team);
+	border-radius: 4px;
+}
+
+.features__list--item {
+	--items: 4;
+	width: 270px;
+	&:last-child {
+		margin-right: 0;
+	}	
+}
+
+.features__list--title {
+	margin-top: 30px;	
+	margin-bottom: 10px;
+	color: var(--title-color);
+	font-size: 14px;
+	font-weight: 700;
+}
+
+.ffeatures__list--text {
+	font-size: 14px;
+	line-height: 1.71;
+	letter-spacing: 0.03em;
+}

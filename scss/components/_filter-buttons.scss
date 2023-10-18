@@ -1,0 +1,44 @@
+/* 
+	|=============================
+	| FILTER BUTTON
+	|=============================
+*/
+
+.buttons {
+	display: flex;
+	justify-content: center;
+}
+
+.btn {
+	margin-right: 8px;
+	&:last-child {
+		margin-right: 0;
+	}
+}
+
+.btn button {
+	padding: 6px 22px;
+	background-color: var(--background-team);
+	color: var(--title-color);
+	border: none;
+	border-radius: 4px;
+	cursor: pointer;
+	font-size: 16px;
+	line-height: 1.62;
+	font-family: "Roboto", sans-serif;
+	letter-spacing: 0.03em;
+	font-weight: 500;
+	transition: background-color var(--slow-anim), color var(--slow-anim), box-shadow var(--slow-anim);
+
+	&:hover,
+	&:focus {
+		background-color: var(--active-color);
+		color: #fff;
+		box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.12), 0px 1px 2px 0px rgba(0, 0, 0, 0.08), 0px 3px 1px 0px rgba(0, 0, 0, 0.10);
+	}
+}
+
+.btn-active button {
+	background-color: var(--active-color);
+	color: #fff;
+}

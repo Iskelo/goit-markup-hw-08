@@ -1,0 +1,47 @@
+/* 
+	|=============================
+	| OUR TEAM
+	|=============================
+*/
+
+.team {
+	background-color: var(--background-team);
+	padding-bottom: 94px;
+	padding-top: 94px;
+}
+
+.team-title {
+	margin-bottom: 50px;
+	color: var(--title-color);
+	font-size: 36px;
+	font-weight: 700;
+	letter-spacing: 0.03em;
+	text-align: center;
+}
+
+.team__list--item {
+	background-color: #fff;
+	--items: 4;
+	box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.20), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
+	border-radius: 0px 0px 4px 4px;
+
+	.team-content {
+		padding-top: 30px;
+		padding-bottom: 30px;
+	}
+	
+	.team-item-title {
+		margin-bottom: 10px;
+		color: var(--title-color);
+		text-align: center;
+		font-size: 16px;
+		font-weight: 500;
+		letter-spacing: 0.03em;
+	}
+	
+	.team-item-text {
+		text-align: center;
+		letter-spacing: 0.03em;
+	}
+}
+
