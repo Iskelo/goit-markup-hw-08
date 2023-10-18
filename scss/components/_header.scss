@@ -12,6 +12,9 @@
 		display: flex;
 		align-items: center;
 	}
+	@include mq(tab){
+		// background-color: red;
+	}
 }
 
 .navigation{

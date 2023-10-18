@@ -110,7 +110,6 @@ p {
       -ms-flex-align: center;
           align-items: center;
 }
-
 .navigation__list {
   display: -webkit-box;
   display: -ms-flexbox;
