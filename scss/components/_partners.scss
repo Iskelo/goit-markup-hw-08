@@ -60,9 +60,9 @@
 	&:focus{
 	fill: var(--active-color);
 	border: 1px solid var(--active-color);
-
+	}
 	@include mq(tab){
-		width: 226px;
+		width: 225px;
 		height: 92px;		
 	}
 
@@ -70,6 +70,5 @@
 		width: 170px;
 		height: 92px;		
 	}
-}
 }
 

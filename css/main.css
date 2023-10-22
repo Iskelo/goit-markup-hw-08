@@ -98,7 +98,7 @@ p {
 }
 @media screen and (min-width: 768px) {
   .container {
-    width: 738px;
+    width: 768px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -412,8 +412,8 @@ p {
   margin-left: auto;
   margin-right: auto;
   background: rgb(196, 196, 196);
-  background-image: url(/images/hero/bg-hero_sm.png), -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4)));
-  background-image: url(/images/hero/bg-hero_sm.png), linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4));
+  background-image: url(images/hero/bg-hero_sm.png), -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4)));
+  background-image: url(images/hero/bg-hero_sm.png), linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4));
   background-position: center;
   background-size: cover;
   letter-spacing: 0.06em;
@@ -421,20 +421,20 @@ p {
 }
 @media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
   .hero {
-    background-image: url(/images/hero/bg-hero_sm@2x.png), -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4)));
-    background-image: url(/images/hero/bg-hero_sm@2x.png), linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4));
+    background-image: url(images/hero/bg-hero_sm@2x.png), -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4)));
+    background-image: url(images/hero/bg-hero_sm@2x.png), linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4));
   }
 }
 @media screen and (min-width: 768px) {
   .hero {
-    background-image: url(/images/hero/bg-hero_md.png), -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4)));
-    background-image: url(/images/hero/bg-hero_md.png), linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4));
+    background-image: url(images/hero/bg-hero_md.png), -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4)));
+    background-image: url(images/hero/bg-hero_md.png), linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4));
   }
 }
 @media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
   .hero {
-    background-image: url(/images/hero/bg-hero_md@2x.png), -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4)));
-    background-image: url(/images/hero/bg-hero_md@2x.png), linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4));
+    background-image: url(images/hero/bg-hero_md@2x.png), -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4)));
+    background-image: url(images/hero/bg-hero_md@2x.png), linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4));
   }
 }
 @media screen and (min-width: 1200px) {
@@ -915,13 +915,13 @@ input[name^=user]:hover ~ .modal-form__icon, input[name^=user]:focus ~ .form-ico
   border: 1px solid var(--active-color);
 }
 @media screen and (min-width: 768px) {
-  .partners-logo:hover, .partners-logo:focus {
-    width: 226px;
+  .partners-logo {
+    width: 225px;
     height: 92px;
   }
 }
 @media screen and (min-width: 1200px) {
-  .partners-logo:hover, .partners-logo:focus {
+  .partners-logo {
     width: 170px;
     height: 92px;
   }

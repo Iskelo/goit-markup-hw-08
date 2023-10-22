@@ -10,12 +10,11 @@
 	}
 
 	@include mq(tab){
-		width: 738px;
+		width: 768px;
 	}
 
 	@include mq(desc){
 		width: 1200px;
 	}
-
 }
 
