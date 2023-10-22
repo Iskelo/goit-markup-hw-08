@@ -5,7 +5,11 @@
 */
 
 .about {
+	display: none;
 	padding-bottom: 94px;
+	@include mq(desc){
+		display: block;
+	}
 }
 
 .about--title {

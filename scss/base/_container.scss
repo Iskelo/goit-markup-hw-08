@@ -8,7 +8,11 @@
 	@include mq(mob){
 		width: 450px;
 	}
-	
+
+	@include mq(tab){
+		width: 738px;
+	}
+
 	@include mq(desc){
 		width: 1200px;
 	}
