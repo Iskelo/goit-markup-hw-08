@@ -1,9 +1,13 @@
 .logo {
-	margin-right: 93px;
+	
 	color: var(--active-color);
 	font-family: Raleway;
 	font-weight: 700;
 	font-size: 26px;
+
+	@include mq(desc){
+		margin-right: 93px;
+	}
 }
 
 .logo__header {
