@@ -26,9 +26,6 @@
   overflow: hidden;
 }
 
-/*@include mq(mob){
-	width: 450px;
-}*/
 html {
   scroll-behavior: smooth;
 }
@@ -96,7 +93,7 @@ p {
 }
 @media screen and (min-width: 480px) {
   .container {
-    width: 450px;
+    width: 480px;
   }
 }
 @media screen and (min-width: 768px) {
@@ -842,22 +839,45 @@ input[name^=user]:hover ~ .modal-form__icon, input[name^=user]:focus ~ .form-ico
 	|=============================
 */
 .partners {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+@media screen and (min-width: 1200px) {
+  .partners {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 
 .partners-title {
-  font-size: 36px;
+  font-size: 28px;
   color: var(--title-color);
   text-align: center;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
+  letter-spacing: 0.84px;
+}
+@media screen and (min-width: 1200px) {
+  .partners-title {
+    font-size: 36px;
+    margin-bottom: 50px;
+  }
 }
 
 .partners-items {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  --items: 6;
+  --items: 2;
+}
+@media screen and (min-width: 768px) {
+  .partners-items {
+    --items: 3;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .partners-items {
+    --items: 6;
+  }
 }
 
 .partners-item {
@@ -873,7 +893,7 @@ input[name^=user]:hover ~ .modal-form__icon, input[name^=user]:focus ~ .form-ico
 }
 
 .partners-logo {
-  width: 170px;
+  width: 210px;
   height: 92px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -893,6 +913,18 @@ input[name^=user]:hover ~ .modal-form__icon, input[name^=user]:focus ~ .form-ico
 .partners-logo:hover, .partners-logo:focus {
   fill: var(--active-color);
   border: 1px solid var(--active-color);
+}
+@media screen and (min-width: 768px) {
+  .partners-logo:hover, .partners-logo:focus {
+    width: 226px;
+    height: 92px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .partners-logo:hover, .partners-logo:focus {
+    width: 170px;
+    height: 92px;
+  }
 }
 
 /* 
@@ -951,25 +983,50 @@ input[name^=user]:hover ~ .modal-form__icon, input[name^=user]:focus ~ .form-ico
 */
 .team {
   background-color: var(--background-team);
-  padding-bottom: 94px;
-  padding-top: 94px;
+  padding-bottom: 60px;
+  padding-top: 60px;
+}
+@media screen and (min-width: 1200px) {
+  .team {
+    padding-bottom: 94px;
+    padding-top: 94px;
+  }
+}
+
+.team__list {
+  min-width: 100%;
 }
 
 .team-title {
-  margin-bottom: 50px;
+  margin-bottom: 30px;
   color: var(--title-color);
   font-size: 36px;
   font-weight: 700;
   letter-spacing: 0.03em;
   text-align: center;
 }
+@media screen and (min-width: 1200px) {
+  .team-title {
+    margin-bottom: 50px;
+  }
+}
 
 .team__list--item {
   background-color: #fff;
-  --items: 4;
+  --items: 1;
   -webkit-box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.2), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
           box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.2), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
   border-radius: 0px 0px 4px 4px;
+}
+@media screen and (min-width: 768px) {
+  .team__list--item {
+    --items: 2;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .team__list--item {
+    --items: 4;
+  }
 }
 .team__list--item .team-content {
   padding-top: 30px;

@@ -5,19 +5,38 @@
 */
 
 .partners {
-	padding-top: 94px;
-	padding-bottom: 94px;
+	padding-top: 60px;
+	padding-bottom: 60px;
+
+	@include mq(desc){
+		padding-top: 94px;
+		padding-bottom: 94px;
+	}
 }
 
 .partners-title {
-	font-size: 36px;
+	font-size: 28px;
 	color: var(--title-color);
 	text-align: center;
-	margin-bottom: 50px;
+	margin-bottom: 30px;
+	letter-spacing: 0.84px;
+
+	@include mq(desc){
+		font-size: 36px;
+		margin-bottom: 50px;
+	}
 }
 .partners-items {
 	display: flex;
-	--items: 6;
+	--items: 2;
+
+	@include mq(tab){
+		--items: 3;
+	}
+
+	@include mq(desc){
+		--items: 6;
+	}
 }
 
 .partners-item {
@@ -27,7 +46,7 @@
 }
 
 .partners-logo {
-	width: 170px;
+	width: 210px;
 	height: 92px;
 	display: flex;
 	align-items: center;
@@ -41,6 +60,16 @@
 	&:focus{
 	fill: var(--active-color);
 	border: 1px solid var(--active-color);
+
+	@include mq(tab){
+		width: 226px;
+		height: 92px;		
+	}
+
+	@include mq(desc){
+		width: 170px;
+		height: 92px;		
+	}
 }
 }
 
