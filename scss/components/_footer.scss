@@ -19,14 +19,21 @@
 	&__container{
 		display: flex;
 		flex-direction: column;
-		align-items: baseline;
-		
+		align-items: baseline;		
+
 		@include mq(desc){
 			flex-direction: row;
 			justify-content:end;
 		}
 	}
 	&__item{
+		margin: 0 auto;
+		
+		@include mq(tab){
+			display: flex;
+			width: 100%;
+			align-items: baseline;
+		}
 		@include mq(desc){
 			display: flex;
 			align-items: baseline;
@@ -125,6 +132,11 @@
 		display: flex;
 		flex-direction: column;
 		gap: 20px;
+
+		@include mq(tab){
+			text-align: center;
+			margin-top: 60px;
+		}
 		
 		@include mq(desc){
 			flex-direction: row;
@@ -138,12 +150,18 @@
 .footer__form--label {
 	display: flex;
 	flex-direction: column;
+
+	&--icon {
+		fill: #fff;
+	}
+}
+.form--title{
 	font-size: 14px;
 	text-transform: uppercase;
 	font-weight: 700;
-	text-align: left;
-	&--icon {
-		fill: #fff;
+
+	@include mq(desc){
+		text-align: left;
 	}
 }
 
@@ -151,6 +169,8 @@
 	outline: transparent;
 	width: 450px;
 	margin-top: 20px;
+	margin-left: auto;
+	margin-right: auto;
 	background-color: transparent;
 	border: 1px solid var(--icons);
 	padding-left: 16px;
