@@ -1286,6 +1286,16 @@ input[name^=user]:hover ~ .modal-form__icon, input[name^=user]:focus ~ .form-ico
             justify-content: end;
   }
 }
+@media screen and (min-width: 1200px) {
+  .footer__item {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+            align-items: baseline;
+  }
+}
 @media screen and (min-width: 480px) {
   .footer__address {
     margin: 0 auto;
@@ -1294,6 +1304,12 @@ input[name^=user]:hover ~ .modal-form__icon, input[name^=user]:focus ~ .form-ico
 @media screen and (min-width: 1200px) {
   .footer__address {
     margin-right: 70px;
+    text-align: left;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .footer__social {
+    text-align: left;
   }
 }
 
@@ -1411,6 +1427,7 @@ input[name^=user]:hover ~ .modal-form__icon, input[name^=user]:focus ~ .form-ico
   font-size: 14px;
   text-transform: uppercase;
   font-weight: 700;
+  text-align: left;
 }
 .footer__form--label--icon {
   fill: #fff;
