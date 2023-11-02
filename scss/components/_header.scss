@@ -11,18 +11,20 @@
 	&__container{
 		display: flex;
 		align-items: center;
-	}
-	@include mq(mob-only){
-		// display: none;
+		justify-content: space-between;
 	}
 }
 
 .navigation{
 	&__list {
-		display: flex;
+		display: none;
 		margin: 0;
 		padding: 0;
 		align-items: center;
+		
+		@include mq(desc){
+			display: flex;
+		}
 	}
 }
 
@@ -68,8 +70,11 @@
 
 .header{
 	&__contact {
-		display: flex;
+		display: none;
 		margin-left: auto;
+		@include mq(desc){
+			display: flex;
+		}
 	}
 }
 
