@@ -4,10 +4,11 @@
 	left: 0;
 	width: 100vw;
 	height: 100vh;
-	padding: 40px;
+	padding-left: 40px;
+	padding-top: 48px;
 	background-color: #fff ;
 	z-index: 999;
-	// transform: translateX(100%);
+	transform: translateX(100%);
 	transition: transform 250ms ease-in-out;
 }
 
@@ -18,11 +19,14 @@
 }
 .btn-toggle {
 }
-.menu-toggle {	
+.menu-toggle {
+	position: absolute;
+	top: 10px;
+	right: 15px;
 	border: none;
 	background-color: transparent;
 	cursor: pointer;
-	@include mq(desc){
+	@include mq(tab){
 		display: none;
 	}
 
@@ -32,46 +36,92 @@
 	flex-direction: column;
 	height: 100%;
 	justify-content: space-between;
+	padding-bottom: 48px;
 	// .mobile-nav__list
 
 	&__list {
 	}
 
 	// .mobile-nav__item
-
+	&__item{
+		margin-bottom: 32px;
+	}
 	&__item a{
 		font-size: 40px;
+		font-weight: 500;
+		letter-spacing: 0.8px ;
 		color: var(--title-color);
 		&:hover{
 			color: var(--active-color);
 		}
 	}
-
-	// .mobile-nav__link
-
-	&__link {
-	}
-
-	// .mobile-nav__contact
-
-	&__contact {
-	}
-
-	// .mobile-nav__social
-
-	&__social {
-		display: flex;
-		// gap: 15px;
-	
-	}
-	&__social li{		
-		padding-right: 5px;
-		&::after{
-			content: "";
-			padding-left: 5px;
-			border-right: 1px solid;
-		}
-	}
 }
 
 
+.mobile-contact {
+	
+	// .mobile-contact__list
+
+	&__list {
+	}
+
+	// .mobile-contact__tel
+
+	&__tel {
+		margin-bottom: 32px;
+	}
+
+	// .mobile-contact__tel--link
+
+	&__tel--link {
+		font-size: 34px;
+		font-weight: 500;
+		color: var(--active-color);
+		letter-spacing: 0.68px;
+	}
+
+	// .mobile-contact__email
+
+	&__email {
+		margin-bottom: 64px;
+	}
+
+	// .mobile-contact__email--link
+
+	&__email--link {
+		font-size: 24px;
+		font-weight: 500;
+		letter-spacing: 0.48px;
+		color: var(--subtitle-color);
+	}
+}
+.mobile-social {
+	
+
+	// .mobile-social__list
+
+	&__list {
+		display: flex;
+
+	}
+
+	// .mobile-social__list--item
+
+	&__list--item {
+		padding-left: 10px;
+		padding-right: 10px;
+		border-right: 1px solid var(--active-color);
+		&:first-child {
+			padding-left: 0;			
+		}
+		&:last-child{
+			border: none;
+		}
+	}
+
+	// .mobile-social__list--link
+
+	&__list--link {		
+		color: var(--active-color);	
+	}
+}

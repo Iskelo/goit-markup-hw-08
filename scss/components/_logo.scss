@@ -3,10 +3,12 @@
 	color: var(--active-color);
 	font-family: Raleway;
 	font-weight: 700;
-	font-size: 26px;
+	font-size: 24px;
+	// margin-right: 88px;
 
 	@include mq(desc){
 		margin-right: 93px;
+		font-size: 26px;
 	}
 }
 

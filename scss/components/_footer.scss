@@ -150,12 +150,6 @@
 .footer__form--label {
 	display: flex;
 	flex-direction: column;
-
-	&--icon {
-		fill: #fff;
-	}
-}
-.form--title{
 	font-size: 14px;
 	text-transform: uppercase;
 	font-weight: 700;
@@ -163,7 +157,12 @@
 	@include mq(desc){
 		text-align: left;
 	}
+
+	&--icon {
+		fill: #fff;
+	}
 }
+
 
 .footer__form--label--email{
 	outline: transparent;
