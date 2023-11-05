@@ -6,14 +6,9 @@
 
 .buttons {
 	display: flex;
+	flex-wrap: wrap;
 	justify-content: center;
-}
-
-.btn {
-	margin-right: 8px;
-	&:last-child {
-		margin-right: 0;
-	}
+	gap: 8px;
 }
 
 .btn button {

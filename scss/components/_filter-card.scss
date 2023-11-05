@@ -12,8 +12,29 @@
 	}
 	@include mq(desc){
 		--items: 3;
-	}		
+	}
+
+
 }
+
+.card{
+	// &:not(&:nth-child(2))
+	&::nth-child() .card-item{
+		@include mq(tab){
+			.content{
+				height: 147px;
+			}
+		}
+
+		@include mq(desc){
+			.content{
+				height: auto;
+			}
+		}
+	}
+}
+
+
 
 .card-title {
 	margin-bottom: 4px;
@@ -24,12 +45,15 @@
 }
 
 .card-item{
-	display: block;	
+	display: block;
 	transition: box-shadow var(--slow-anim);
+	height: 428px;
 	&:hover,
-	&:focus{	
+	&:focus{
 		box-shadow: 1px 4px 6px 0px rgba(0, 0, 0, 0.16), 0px 4px 4px 0px rgba(0, 0, 0, 0.06), 0px 1px 1px 0px rgba(0, 0, 0, 0.12);
 	}
+
+
 }
 
 
@@ -41,6 +65,9 @@
 }
 
 .content {
+	display: flex;
+	flex-direction: column;
+	
 	padding-left: 24px;
 	padding-right: 24px;
 	padding-top: 20px;
