@@ -30,6 +30,11 @@
 	display: flex;
 	--items: 2;
 
+	
+	@include mq(mob-only){
+		--items: 1;
+	}
+	
 	@include mq(tab){
 		--items: 3;
 	}
