@@ -23,9 +23,6 @@
  }
 
 .menu-toggle {
-	position: absolute;
-	top: 10px;
-	right: 15px;
 	border: none;
 	background-color: transparent;
 	cursor: pointer;
@@ -35,6 +32,12 @@
 	&:hover, &:focus{
 		fill: var(--active-color);			
 	}
+}
+
+.js-close-menu{
+	position: absolute;
+	top: 10px;
+	right: 15px;
 }
 
 .mobile-nav {
@@ -49,16 +52,21 @@
 		margin-bottom: 32px;
 	}
 
-	&__item a{
-		font-size: 40px;
-		font-weight: 500;
-		letter-spacing: 0.8px ;
-		color: var(--title-color);
-		transition: color var(--slow-anim);
-		&:hover{
-			color: var(--active-color);
-		}
+}
+
+.mobile-nav__link{
+	font-size: 40px;
+	font-weight: 500;
+	letter-spacing: 0.8px ;
+	color: var(--title-color);
+	transition: color var(--slow-anim);
+	&:hover, &:focus{
+		color: var(--active-color);
 	}
+}
+
+.mobile-nav__link--active{
+	color: var(--active-color);
 }
 
 

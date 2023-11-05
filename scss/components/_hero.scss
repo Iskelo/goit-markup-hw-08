@@ -54,6 +54,7 @@
 		line-height: 1.61;
 		letter-spacing: 1.56px;
 		margin-bottom: 30px;
+		max-width: 360px;
 
 		@include mq(desc){
 			font-size: 44px;

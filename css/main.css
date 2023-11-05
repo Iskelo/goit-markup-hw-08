@@ -317,9 +317,6 @@ p {
 }
 
 .menu-toggle {
-  position: absolute;
-  top: 10px;
-  right: 15px;
   border: none;
   background-color: transparent;
   cursor: pointer;
@@ -331,6 +328,12 @@ p {
 }
 .menu-toggle:hover, .menu-toggle:focus {
   fill: var(--active-color);
+}
+
+.js-close-menu {
+  position: absolute;
+  top: 10px;
+  right: 15px;
 }
 
 .mobile-nav {
@@ -350,7 +353,8 @@ p {
 .mobile-nav__item {
   margin-bottom: 32px;
 }
-.mobile-nav__item a {
+
+.mobile-nav__link {
   font-size: 40px;
   font-weight: 500;
   letter-spacing: 0.8px;
@@ -358,7 +362,11 @@ p {
   -webkit-transition: color var(--slow-anim);
   transition: color var(--slow-anim);
 }
-.mobile-nav__item a:hover {
+.mobile-nav__link:hover, .mobile-nav__link:focus {
+  color: var(--active-color);
+}
+
+.mobile-nav__link--active {
   color: var(--active-color);
 }
 
@@ -465,6 +473,7 @@ p {
   line-height: 1.61;
   letter-spacing: 1.56px;
   margin-bottom: 30px;
+  max-width: 360px;
 }
 @media screen and (min-width: 1200px) {
   .hero__title {
