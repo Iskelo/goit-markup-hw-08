@@ -63,6 +63,10 @@
 	&:hover, &:focus{
 		color: var(--active-color);
 	}
+
+	@include mq(mob-only){
+		font-size: 26px;
+	}
 }
 
 .mobile-nav__link--active{
@@ -85,6 +89,10 @@
 		font-weight: 500;
 		color: var(--active-color);
 		letter-spacing: 0.68px;
+
+		@include mq(mob-only){
+			font-size: 24px;
+		}
 	}
 
 	// .mobile-contact__email
@@ -100,6 +108,9 @@
 		font-weight: 500;
 		letter-spacing: 0.48px;
 		color: var(--subtitle-color);
+		@include mq(mob-only){
+			font-size: 18px;
+		}
 	}
 }
 .mobile-social {	
@@ -108,7 +119,6 @@
 
 	&__list {
 		display: flex;
-
 	}
 
 	// .mobile-social__list--item
@@ -118,9 +128,15 @@
 		padding-right: 10px;
 		border-right: 1px solid var(--active-color);
 		&:first-child {
-			padding-left: 0;			
+			padding-left: 0;
 		}
 		&:last-child{
+			border: none;
+		}
+
+		@include mq(mob-only){
+			padding-left: 5px;
+			padding-right: 5px;
 			border: none;
 		}
 	}
@@ -131,6 +147,11 @@
 		color: var(--active-color);
 		font-weight: 500;
 		font-size: 18px;
-		letter-spacing: 0.36px;	
+		letter-spacing: 0.36px;
+
+		@include mq(mob-only){
+			font-size: 14px;
+			letter-spacing: normal
+		}
 	}
 }

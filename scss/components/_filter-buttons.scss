@@ -6,9 +6,15 @@
 
 .buttons {
 	display: flex;
-	flex-wrap: wrap;
-	justify-content: center;
+	flex-wrap: wrap;	
 	gap: 8px;
+	@include mq(tab){
+		justify-content: center;
+	}
+
+	@include mq(mob-only){
+		justify-content: center;
+	}
 }
 
 .btn button {

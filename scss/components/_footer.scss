@@ -203,7 +203,7 @@
 	
 
 	@include mq(mob-only){
-		min-width: 320px;
+		min-width: 100%;
 	}
 
 	@include mq(desc){

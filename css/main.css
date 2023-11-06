@@ -365,6 +365,11 @@ p {
 .mobile-nav__link:hover, .mobile-nav__link:focus {
   color: var(--active-color);
 }
+@media screen and (min-width: 320px) and (max-width: 479.98px) {
+  .mobile-nav__link {
+    font-size: 26px;
+  }
+}
 
 .mobile-nav__link--active {
   color: var(--active-color);
@@ -379,6 +384,11 @@ p {
   color: var(--active-color);
   letter-spacing: 0.68px;
 }
+@media screen and (min-width: 320px) and (max-width: 479.98px) {
+  .mobile-contact__tel--link {
+    font-size: 24px;
+  }
+}
 .mobile-contact__email {
   margin-bottom: 64px;
 }
@@ -387,6 +397,11 @@ p {
   font-weight: 500;
   letter-spacing: 0.48px;
   color: var(--subtitle-color);
+}
+@media screen and (min-width: 320px) and (max-width: 479.98px) {
+  .mobile-contact__email--link {
+    font-size: 18px;
+  }
 }
 
 .mobile-social__list {
@@ -405,11 +420,24 @@ p {
 .mobile-social__list--item:last-child {
   border: none;
 }
+@media screen and (min-width: 320px) and (max-width: 479.98px) {
+  .mobile-social__list--item {
+    padding-left: 5px;
+    padding-right: 5px;
+    border: none;
+  }
+}
 .mobile-social__list--link {
   color: var(--active-color);
   font-weight: 500;
   font-size: 18px;
   letter-spacing: 0.36px;
+}
+@media screen and (min-width: 320px) and (max-width: 479.98px) {
+  .mobile-social__list--link {
+    font-size: 14px;
+    letter-spacing: normal;
+  }
 }
 
 /* 
@@ -897,7 +925,7 @@ input[name^=user]:hover ~ .modal-form__icon, input[name^=user]:focus ~ .form-ico
   display: flex;
   --items: 2;
 }
-@media screen and (min-width: 350px) and (max-width: 479.98px) {
+@media screen and (min-width: 320px) and (max-width: 479.98px) {
   .partners-items {
     --items: 1;
   }
@@ -1144,13 +1172,13 @@ input[name^=user]:hover ~ .modal-form__icon, input[name^=user]:focus ~ .form-ico
 	|=============================
 */
 .portfolio {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1200px) {
   .portfolio {
-    padding-top: 60px;
-    padding-bottom: 60px;
+    padding-top: 94px;
+    padding-bottom: 94px;
   }
 }
 
@@ -1264,6 +1292,11 @@ input[name^=user]:hover ~ .modal-form__icon, input[name^=user]:focus ~ .form-ico
   line-height: 1.5;
   letter-spacing: 0.03em;
 }
+@media screen and (min-width: 320px) and (max-width: 479.98px) {
+  .desc-text {
+    font-size: 14px;
+  }
+}
 
 /* 
 	|=============================
@@ -1276,10 +1309,21 @@ input[name^=user]:hover ~ .modal-form__icon, input[name^=user]:focus ~ .form-ico
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   gap: 8px;
+}
+@media screen and (min-width: 768px) {
+  .buttons {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+@media screen and (min-width: 320px) and (max-width: 479.98px) {
+  .buttons {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
 }
 
 .btn button {
@@ -1321,7 +1365,7 @@ input[name^=user]:hover ~ .modal-form__icon, input[name^=user]:focus ~ .form-ico
   color: #fff;
   text-align: center;
 }
-@media screen and (min-width: 350px) and (max-width: 479.98px) {
+@media screen and (min-width: 320px) and (max-width: 479.98px) {
   .footer {
     padding-top: 60px;
     padding-bottom: 60px;
@@ -1439,7 +1483,7 @@ input[name^=user]:hover ~ .modal-form__icon, input[name^=user]:focus ~ .form-ico
 .footer__social {
   margin: 0;
 }
-@media screen and (min-width: 350px) and (max-width: 479.98px) {
+@media screen and (min-width: 320px) and (max-width: 479.98px) {
   .footer__social {
     margin: 60px auto;
   }
@@ -1572,9 +1616,9 @@ input[name^=user]:hover ~ .modal-form__icon, input[name^=user]:focus ~ .form-ico
   -webkit-transition: border var(--slow-anim);
   transition: border var(--slow-anim);
 }
-@media screen and (min-width: 350px) and (max-width: 479.98px) {
+@media screen and (min-width: 320px) and (max-width: 479.98px) {
   .footer__form--label--email {
-    min-width: 320px;
+    min-width: 100%;
   }
 }
 @media screen and (min-width: 1200px) {

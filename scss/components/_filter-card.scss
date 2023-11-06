@@ -98,5 +98,9 @@
 	font-size: 18px;
 	line-height: 1.5;
 	letter-spacing: 0.03em;
+
+	@include mq(mob-only){
+		font-size: 14px;
+	}
 }
 
