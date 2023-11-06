@@ -13,19 +13,16 @@
 	@include mq(desc){
 		--items: 3;
 	}
-
-
 }
 
 .card{
-	// &:not(&:nth-child(2))
-	&::nth-child() .card-item{
+	&:first-child{
+
 		@include mq(tab){
 			.content{
 				height: 147px;
 			}
 		}
-
 		@include mq(desc){
 			.content{
 				height: auto;
@@ -33,8 +30,6 @@
 		}
 	}
 }
-
-
 
 .card-title {
 	margin-bottom: 4px;
@@ -46,17 +41,12 @@
 
 .card-item{
 	display: block;
-	transition: box-shadow var(--slow-anim);
-	height: 428px;
+	transition: box-shadow var(--slow-anim);	
 	&:hover,
 	&:focus{
 		box-shadow: 1px 4px 6px 0px rgba(0, 0, 0, 0.16), 0px 4px 4px 0px rgba(0, 0, 0, 0.06), 0px 1px 1px 0px rgba(0, 0, 0, 0.12);
 	}
-
-
 }
-
-
 
 .card-text {
 	color: var(--subtitle-color);

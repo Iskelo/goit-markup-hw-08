@@ -1175,12 +1175,12 @@ input[name^=user]:hover ~ .modal-form__icon, input[name^=user]:focus ~ .form-ico
 }
 
 @media screen and (min-width: 768px) {
-  .card::nth-child() .card-item .content {
+  .card:first-child .content {
     height: 147px;
   }
 }
 @media screen and (min-width: 1200px) {
-  .card::nth-child() .card-item .content {
+  .card:first-child .content {
     height: auto;
   }
 }
@@ -1199,7 +1199,6 @@ input[name^=user]:hover ~ .modal-form__icon, input[name^=user]:focus ~ .form-ico
   transition: -webkit-box-shadow var(--slow-anim);
   transition: box-shadow var(--slow-anim);
   transition: box-shadow var(--slow-anim), -webkit-box-shadow var(--slow-anim);
-  height: 428px;
 }
 .card-item:hover, .card-item:focus {
   -webkit-box-shadow: 1px 4px 6px 0px rgba(0, 0, 0, 0.16), 0px 4px 4px 0px rgba(0, 0, 0, 0.06), 0px 1px 1px 0px rgba(0, 0, 0, 0.12);
