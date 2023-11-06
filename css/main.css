@@ -570,6 +570,13 @@ p {
   transition: transform var(--slow-anim);
   transition: transform var(--slow-anim), -webkit-transform var(--slow-anim);
 }
+@media screen and (min-width: 320px) and (max-width: 479.98px) {
+  .modal-wrapper {
+    width: 100vw;
+    height: 100vh;
+    padding: 35px 20px 20px 20px;
+  }
+}
 @media screen and (min-width: 1200px) {
   .modal-wrapper {
     width: 528px;
@@ -630,6 +637,11 @@ p {
   font-size: 20px;
   letter-spacing: 0.6px;
   line-height: 1.5;
+}
+@media screen and (min-width: 320px) and (max-width: 479.98px) {
+  .modal-title {
+    line-height: normal;
+  }
 }
 
 input[name^=user] {
@@ -695,6 +707,11 @@ span[data-title] {
 @media screen and (min-width: 1200px) {
   .modal-form__policy-group {
     padding-left: 10px;
+  }
+}
+@media screen and (min-width: 320px) and (max-width: 479.98px) {
+  .modal-form__policy-group {
+    margin-bottom: 10px;
   }
 }
 
